@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <Header /> -->
+    <Header class="absolute z-999" />
     <Nuxt />
   </div>
 </template>

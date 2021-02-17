@@ -1,7 +1,7 @@
 <template>
-    <div>
-        {{blok.title}}
-    </div>
+  <div>
+    {{ blok.title }}
+  </div>
 </template>
 <script>
 export default {
@@ -11,5 +11,5 @@ export default {
       required: true
     }
   }
-};
+}
 </script>
