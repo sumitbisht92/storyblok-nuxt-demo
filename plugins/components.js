@@ -1,6 +1,6 @@
 import Vue from 'vue'
 
-import ImageList from '~/components/Imagelist.vue'
+import ImageList from '~/components/ImageList.vue'
 import Home from '~/components/Homepage.vue'
 import Card from '~/components/Card.vue'
 import Button from '~/components/Button.vue'
