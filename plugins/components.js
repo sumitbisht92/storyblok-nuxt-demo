@@ -12,7 +12,7 @@ import Titleblock from '~/components/Titleblock.vue'
 Vue.component('imagelist', ImageList)
 Vue.component('homepage', Home)
 Vue.component('card', Card)
-Vue.component('button', Button)
+Vue.component('Button', Button)
 Vue.component('header', Header)
 Vue.component('secondimage', Secondimage)
 Vue.component('titleblock', Titleblock)
