@@ -11,11 +11,12 @@
     </div>
     <div
       v-editable="blok"
-      class="p-2 bg-white pl-12 pr-6"
-      style="position:absolute;z-index:22;width:565px;height:300px "
+      class="p-2 bg-white pl-20 pr-6"
+      style="position:absolute;z-index:22;width:650px;height:300px "
     >
       <div class="text-5xl font-normal uppercase">{{ blok.body[0].title }}</div>
       <div class="text-base font-normal leading-7">{{ blok.body[0].subtitle }}</div>
+     
        <div class="flex text-xs font-bold space-x-4 text-white p-2 cursor-pointer">
       <Button
         style="background:#011E41;
@@ -34,7 +35,9 @@
 </template>
 
 <script>
+import Card from './Card.vue';
 export default {
+  components: { Card },
   props: {
     blok: {
       type: Object,

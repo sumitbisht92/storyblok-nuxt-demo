@@ -7,35 +7,41 @@
         alt=""
       />
       <div
-      v-editable="blok"
-      class="p-2 bg-white pl-12 pr-6"
-      style="position:absolute;z-index:2;left:25%;top:145% "
-    >
-      <div class="text-5xl font-normal uppercase">{{ blok.body[0].title }}</div>
-      <div class="text-base font-normal leading-7">
-        {{ blok.body[0].subtitle }}
-      </div>
-      <div
-        class="flex text-xs font-bold space-x-4 text-white p-2 cursor-pointer"
+        v-editable="blok"
+        class="py-2 px-10 mb-4 bg-white pl-12 pr-6"
+        style="position:absolute;z-index:2;left:25%;top:145%;width:600px "
       >
-        <Button
-          style="background:#011E41;
+        <div class="text-5xl font-normal uppercase whitespace-pre text-justify -mb-10 pl-16">
+          {{ blok.body[0].title }}
+        </div>
+        
+       <div class=""> <Statistics :blok="blok.body[0].body" /></div>
+        <div class="text-base font-normal leading-7 my-4">
+          {{ blok.body[0].subtitle }}
+        </div>
+        <div
+          class="flex text-xs font-bold space-x-4 text-white p-2 cursor-pointer"
+        >
+          <Button
+            style="background:#011E41;
                border-radius:25px;
                width:100px;
                height:40px;
-               padding-left:26px;
+               padding-left:16px;
                padding-top:12px"
-          :blok="blok.body"
-        />
+            :blok="blok.body[1]"
+          />
+          <!-- <Button :blok="blok.body[1]"/> -->
+        </div>
       </div>
     </div>
-    </div>
-    
   </div>
 </template>
 
 <script>
+
 export default {
+ 
   props: {
     blok: {
       type: Object,
